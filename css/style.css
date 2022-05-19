@@ -1,0 +1,221 @@
+/*---- ROOT ----*/
+:root {
+    --primary: #202020;
+    --secondary: #FFFF;
+    --accent: #F7E7A4;
+    --accent2: #B29657;
+}
+
+/*---- FONTS ----*/
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&family=Rufina&display=swap');
+
+/*---- Backgrounds ----*/
+.bg-1 {
+    background-color: var(--primary);
+}
+
+/*---- Text ----*/
+a {
+    font-family: 'Oranienbaum', serif;
+    color: var(--secondary);
+    text-decoration: none!important;
+    transition: 0.3s;
+}
+a:hover{ color: var(--accent); }
+
+.active{ color: var(--accent); }
+
+span {
+    color: var(--accent);
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Oranienbaum', serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: var(--accent2);
+}
+
+p {
+    font-family: 'Rufina', serif;
+    font-size: 1.5rem;
+}
+
+.lighter {
+    color: white;
+    opacity: 80%;
+}
+
+.text-accent {
+    color: var(--accent2);
+}
+
+.text-accent2 {
+    color: var(--accent);
+}
+
+/*---- Botones ----*/
+.boton-1 {
+    background-color: var(--primary);
+    padding: 8px 20px 8px 20px;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+}
+
+.boton-1:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+.boton-banner {
+    position: absolute;
+    top: 60%;
+}
+
+/*---- Header ----*/
+.header {
+    font-size: 1.1rem;
+    z-index: 999999;
+}
+.header .row{
+    margin-right: 0px;
+}
+.menu-right a, .menu-left a {
+    margin-right: 22px;
+}
+.menu-left a:last-child {
+    margin-right: 0;
+}
+
+/*---- Parallax ----*/
+.parallax-window {
+    height: 618px;
+    background: transparent;
+    width: 100%;
+}
+
+/*---- Card ----*/
+.card {
+    border: 1;
+}
+
+.title-card {
+    font-size: 2rem;
+}
+
+.title-card a{
+    color: var(--primary);
+}
+
+.title-card a:hover{ color: var(--accent2); }
+
+
+hr.solid {
+    border-top: 3px solid var(--accent2);
+    opacity: 100%;
+}
+
+.name {
+    font-size: 5.3vw;
+    text-shadow: 4px 3px 0 var(--accent2), 8px 6px 0 var(--primary);
+    position: absolute;
+    top: 40%;
+}
+
+/*---- Scroll ----*/
+.scroll-div {
+    max-height: 440px;
+    overflow-y: scroll;
+}
+
+/*---- Agendar ----*/
+.scroll-div p {
+    font-size: 3vh;
+}
+
+.funciones {
+    background-color: var(--accent2)!important;
+}
+
+.funciones a:hover {
+    color: white;
+}
+
+/*---- Productos ----*/
+.productos h5 {
+    font-size: 1.5rem;
+}
+
+.productos p {
+    font-size: 1.2rem;
+}
+
+.card-body a{
+    color: var(--primary);
+}
+
+.card-body a:hover{ color: var(--accent2); }
+
+/*---- Servicios ----*/
+.servicio:nth-of-type(odd)
+{
+    background-color: white;
+}
+.servicio:nth-of-type(even)
+{
+    background-color: var(--primary);
+    flex-direction: row-reverse !important;
+}
+
+.servicio:nth-of-type(even) p {
+    color: white;
+}
+
+/*---- Hidden ----*/
+.hidden {
+    display: none;
+}
+
+.card-img-top {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+}
+
+.card-img-top:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+}
+
+#texto-banner {
+    color: white;
+    padding-top: 250px;
+    padding-left: 20px;
+}
+
+#grey-image {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+}
+
+#grey-image:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+}
+
+.img-fluids{
+    height: 218px;
+    width: 218px;
+}
